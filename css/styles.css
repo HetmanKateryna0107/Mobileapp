@@ -1,0 +1,316 @@
+:root {
+  --primaru-brand-color: #06071b;
+  --text-color: #ffffff;
+  --liner: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  --liner-header: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
+
+  /* -- background-section: #E5E5E5; */
+  /* --subtle-text: #8e8f99;
+  --pressed-state-color: #404bbf;
+  --dark-color: #2e2f42;
+
+  --text-footer-color: #e7e9fc;
+  --subtle-text-color: #ffffff;
+  --light-color: #f4f4fd;
+  --success-color: #31d0aa;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter";
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+}
+img {
+  display: block;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: calc(24 / 20);
+  letter-spacing: 0em;
+}
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(20 / 14);
+  letter-spacing: 0em;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(22 / 18);
+  letter-spacing: 0em;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(24 / 20);
+  letter-spacing: 0em;
+}
+
+.container {
+  max-width: 100%;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* ____________________________header */
+.header {
+  background-color: rgba(6, 7, 27, 1);
+  color: var(--text-color);
+}
+.header-menu {
+  background-image: var(--liner-header);
+  padding: 22px;
+}
+.logo {
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: calc(34 / 28);
+  letter-spacing: 0em;
+  text-align: left;
+}
+/*___________________________________hero  */
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: calc(19 / 16);
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "Inter";
+  background-color: rgba(0, 197, 235, 1);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 197, 235, 1);
+  color: var(--text-color);
+}
+.list {
+  padding-bottom: 40px;
+}
+.hero-list {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: calc(15 / 12);
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero-list:not(:last-child) {
+  margin-bottom: 11px;
+}
+.button:hover,
+.button:focus {
+  background-color: rgba(6, 7, 27, 1);
+  color: var(--text-color);
+  border: 1px solid;
+  border-color: #00c5eb;
+}
+
+.menu-link {
+  color: #fff;
+  font-size: 12px;
+}
+
+.menu-link:focus,
+.menu-link:hover {
+  color: rgba(181, 68, 254, 1);
+}
+
+.hero {
+  background-color: rgba(6, 7, 27, 1);
+  color: var(--text-color);
+  padding-top: 105px;
+  padding-bottom: 69px;
+}
+
+.title {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: calc(29 / 24);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(17 / 14);
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+}
+
+.hero-list {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: calc(15 / 12);
+  letter-spacing: 0em;
+}
+
+/* <!-- ----------------------------KEY FEATURES --> */
+.light-section {
+  background-image: var(--liner-header);
+  background-color: var(--text-color);
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.title-color-darc {
+  color: var(--primaru-brand-color);
+}
+.key-features {
+  margin-bottom: 50px;
+}
+.text-key-features {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(20 / 14);
+  letter-spacing: 0em;
+  margin-bottom: 50px;
+}
+.subtext-key-features {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: calc(15 / 12);
+  letter-spacing: 0em;
+}
+.subtext-key-features:not(:last-child) {
+  margin-bottom: 50px;
+}
+.title-key-features {
+  margin-bottom: 20px;
+}
+/* <!--------------------------------- WATCH THE VIDEO --> */
+
+.dark-section {
+  background-color: var(--primaru-brand-color);
+  color: var(--text-color);
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.text-video {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(17 / 14);
+  letter-spacing: 0em;
+  margin-bottom: 50px;
+}
+
+/* <!--------------------------  OUR TEAM--> */
+.title-our-team {
+  margin-bottom: 32px;
+}
+.names-developers {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(24 / 14);
+  letter-spacing: 0em;
+  text-align: center;
+}
+.costumer {
+  padding-top: 0;
+}
+.text-team {
+  margin-bottom: 30px;
+}
+.team-list:not(:last-child) {
+  margin-bottom: 24px;
+}
+.title-team {
+  margin-bottom: 22px;
+}
+
+/* <!-- ----------------- WHAT OUR COSTUMER’S SAY --> */
+.title-costumer {
+  margin-bottom: 45px;
+}
+.img {
+  margin-bottom: 23px;
+}
+.text-costumer {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(24 / 16);
+  letter-spacing: 0em;
+  text-align: center;
+}
+.costumers {
+  margin-bottom: 33px;
+}
+/* <!-- ______________________footer --> */
+
+.title-footer {
+  margin-bottom: 44px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+.button-footer {
+  margin-bottom: 43px;
+}
+.subtitle-footer {
+  margin-bottom: 20px;
+}
+.text-footer {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(19 / 16);
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.address {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(19 / 16);
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.address-list:not(:last-child) {
+  margin-bottom: 15px;
+}
+.address-item {
+  margin-bottom: 40px;
+}
