@@ -121,6 +121,7 @@ h5 {
   border-radius: 5px;
   border: 1px solid rgba(0, 197, 235, 1);
   color: var(--text-color);
+  padding: 15px 65px;
 }
 .list {
   padding-bottom: 40px;
@@ -218,7 +219,9 @@ h5 {
   margin-bottom: 20px;
 }
 /* <!--------------------------------- WATCH THE VIDEO --> */
-
+.title-color-light {
+  margin-bottom: 30px;
+}
 .dark-section {
   background-color: var(--primaru-brand-color);
   color: var(--text-color);
@@ -232,7 +235,11 @@ h5 {
   letter-spacing: 0em;
   margin-bottom: 50px;
 }
+.video-wrapper {
+  max-width: 100%;
 
+  background-image: url(/img/video/mobil.png);
+}
 /* <!--------------------------  OUR TEAM--> */
 .title-our-team {
   margin-bottom: 32px;
