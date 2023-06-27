@@ -21,21 +21,89 @@
   <body>
     <header class="header">
       <div class="container header-menu">
-        <nav>
+        <nav class="nav">
           <a href="./index.html" class="logo">Mobileapp</a>
-          <!-- <ul class="menu">
-            <li class="menu-item"><a href="" class="menu-link">HOME</a></li>
-            <li class="menu-item"><a href="" class="menu-link">FEATURES</a></li>
-            <li class="menu-item"><a href="" class="menu-link">TEAM</a></li>
-            <li class="menu-item">
-              <a href="" class="menu-link">TESTIMONIALS</a>
+          <ul class="menu">
+            <li class="menu-item menu-link"><a href="">HOME</a></li>
+            <li class="menu-item menu-link"><a href="">FEATURES</a></li>
+            <li class="menu-item menu-link"><a href="">TEAM</a></li>
+            <li class="menu-item menu-link">
+              <a href="">TESTIMONIALS</a>
             </li>
             <li class="menu-item"><a href="" class="menu-link">CONTACT</a></li>
-          </ul> -->
+          </ul>
         </nav>
         <button type="button" class="modal-btn cursor">burger</button>
       </div>
     </header>
+
+    <!-- <a href="./index.html" class="logo">Mobileapp</a><button>close</button>
+    <ul class="menu-modal">
+      <li class="menu-item menu-link"><a href="">HOME</a></li>
+      <li class="menu-item menu-link"><a href="">FEATURES</a></li>
+      <li class="menu-item menu-link"><a href="">TEAM</a></li>
+      <li class="menu-item menu-link">
+        <a href="">TESTIMONIALS</a>
+      </li>
+      <li class="menu-item"><a href="" class="menu-link">CONTACT</a></li>
+    </ul> -->
+
+    <!-- <h2>Download</h2>
+    <p>Download free plan</p>
+    <ul>
+      <li>Basic functionality</li>
+      <li>Limited access</li>
+      <li>Community support</li>
+    </ul>
+    <p>Download for 20$</p>
+    <ul>
+      <li>Ad-free experience</li>
+      <li>Unlock exclusive features</li>
+      <li>Content for the ultimate mobile experience</li>
+    </ul>
+    <p>
+      No matter which plan you choose, we're excited to have you as part of our
+      community of mobile app users!
+    </p>
+    <ul>
+      <li>
+        <p>App name</p>
+        Mobileapp.layout
+      </li>
+      <li>
+        <p>License</p>
+        Free
+      </li>
+      <li>
+        <p>Author</p>
+        Mobile Marrket App.com
+      </li>
+      <li>
+        <p>Data</p>
+        21.02.2022
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p>OC</p>
+        Windows
+      </li>
+      <li>
+        <p>Language</p>
+        English
+      </li>
+      <li>
+        <p>Size</p>
+        4.16 MB
+      </li>
+      <li>
+        <p>Downloads</p>
+        964
+      </li>
+    </ul> -->
+    <!-- <button type="button" class="button cursor button-download">
+            Download
+          </button> -->
     <!------------------------------------ HERO -->
     <main>
       <section class="hero">
@@ -44,17 +112,28 @@
           <p class="subtitle">Download our mobile app today!</p>
           <ul class="list">
             <li class="hero-list">
+              <svg class="strelka-icon" width="18" height="18">
+                <use href="./img/sprite/symbol-defs.svg#icon-strelka"></use>
+              </svg>
               Real-time updates and notifications for timely information
             </li>
             <li class="hero-list">
+              <svg class="strelka-icon" width="18" height="18">
+                <use href="./img/sprite/symbol-defs.svg#icon-strelka"></use>
+              </svg>
               Robust analytics and reporting for data-driven insights
             </li>
             <li class="hero-list">
+              <svg class="strelka-icon" width="18" height="18">
+                <use href="./img/sprite/symbol-defs.svg#icon-strelka"></use>
+              </svg>
               Offline capabilities for uninterrupted use
             </li>
           </ul>
 
-          <button type="button" class="button cursor">Download</button>
+          <button type="button" class="button cursor button-download">
+            Download
+          </button>
         </div>
       </section>
       <!-- ----------------------------KEY FEATURES -->
@@ -72,6 +151,7 @@
             alt="chuvachok"
             width="280"
             height="410"
+            class="img-key"
           />
           <ul>
             <li class="subtext-key-features">
@@ -80,31 +160,31 @@
               seamless mobile experience for users.
             </li>
             <li class="subtext-key-features">
-              <h3>Personalized Recommendations:</h3>
+              <h3 class="title-key-features">Personalized Recommendations:</h3>
               Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
               Vivamus diam a iaculis malesuada
             </li>
             <li class="subtext-key-features">
-              <h3>Real-Time Updates:</h3>
+              <h3 class="title-key-features">Real-Time Updates:</h3>
               Users receive real-time updates and notifications to stay informed
               on important news and events, and to stay up-to-date with changes
               to the app.
             </li>
 
             <li class="subtext-key-features">
-              <h3>Integration with Other Apps:</h3>
+              <h3 class="title-key-features">Integration with Other Apps:</h3>
               The app integrates with other popular apps, making it easy for
               users to connect with their social media accounts, or to easily
               make in-app purchases using their preferred payment method.
             </li>
             <li class="subtext-key-features">
-              <h3>Multi-Language Support:</h3>
+              <h3 class="title-key-features">Multi-Language Support:</h3>
               The app is designed to be accessible to users all around the
               world, with support for multiple languages, making it easier for
               people to use the app in their native language.
             </li>
             <li class="subtext-key-features">
-              <h3>Offline Capabilities:</h3>
+              <h3 class="title-key-features">Offline Capabilities:</h3>
               The app offers offline capabilities, allowing users to access
               certain features and content even when they are not connected to
               the internet.
@@ -124,6 +204,7 @@
             download on both Apple and Android devices and is designed to make
             your life easier.
           </p>
+
           <div class="video-wrapper">
             <iframe
               width="401"
@@ -148,13 +229,14 @@
             allowing us to work collaboratively and effectively to achieve our
             goals.
           </p>
-          <ul>
+          <ul class="team-item">
             <li class="team-list">
               <img
                 src="./img/our-team/david-patel.png"
                 alt="David Patel"
                 width="250"
                 height="300"
+                class="img-developers"
               />
               <h4 class="title-team">David Patel</h4>
               <p class="names-developers">Managing Direcor</p>
@@ -165,6 +247,7 @@
                 alt="Rachel Kim"
                 width="250"
                 height="300"
+                class="img-developers"
               />
               <h4 class="title-team">Rachel Kim</h4>
               <p class="names-developers">Lead Designer</p>
@@ -175,6 +258,7 @@
                 alt="Samantha Chen"
                 width="250"
                 height="300"
+                class="img-developers"
               />
               <h4 class="title-team">Samantha Chen</h4>
               <p class="names-developers">Lead Developer</p>
@@ -185,6 +269,7 @@
                 alt="Andrew Nguyen"
                 width="250"
                 height="300"
+                class="img-developers"
               />
               <h4 class="title-team">Andrew Nguyen</h4>
               <p class="names-developers">Sr. UI Designer</p>
@@ -203,7 +288,7 @@
             height="181"
             class="img"
           />
-          <h4>Jon Doe</h4>
+          <h4 class="title-name-costumer">Jon Doe</h4>
           <p class="names-developers costumers">Company Inc.</p>
           <p class="text-costumer">
             I've been using this app for a few weeks now and I have to say, I'm
@@ -216,7 +301,7 @@
       </section>
     </main>
     <!-- ______________________footer -->
-    <footer class="dark-section">
+    <footer class="dark-section footer">
       <div class="container">
         <h2 class="title-footer">CONTACT US</h2>
         <forma>
@@ -227,26 +312,54 @@
           <button type="submit" class="button cursor button-footer">
             SUBMIT
           </button>
-          <h5 class="subtitle-footer">Get in touch with us</h5>
-          <p class="text-footer">
-            Have a question or comment about our app? Get in touch with us using
-            the contact form below and our team will respond shortly.
-          </p>
-          <address>
-            <ul class="address-item">
-              <li class="address-list">
-                <a href="tel:+xxxxxxxxxxxx" class="address">+xx-xxxx-xxxx-xx</a>
-              </li>
-              <li class="address-list">
-                <a href="email:goIteens@gmail.com" class="address"
-                  >goIteens@gmail.com</a
-                >
-              </li>
-            </ul>
-          </address>
         </forma>
+        <h5 class="subtitle-footer">Get in touch with us</h5>
+        <p class="text-footer">
+          Have a question or comment about our app? Get in touch with us using
+          the contact form below and our team will respond shortly.
+        </p>
+        <ul class="icon-sotial-list">
+          <li class="sotial-icon-list">
+            <a href="" class="sotial-list-link">
+              <svg class="sotial-icon" width="20" height="20">
+                <use
+                  href="./img/sprite/symbol-defs.svg#icon-facebook"
+                ></use></svg
+            ></a>
+          </li>
+          <li class="sotial-icon-list">
+            <a href="" class="sotial-list-link">
+              <svg class="sotial-icon" width="20" height="20">
+                <use
+                  href="./img/sprite/symbol-defs.svg#icon-twitter"
+                ></use></svg
+            ></a>
+          </li>
+          <li class="sotial-icon-list">
+            <a href="" class="sotial-list-link">
+              <svg class="sotial-icon" width="20" height="20">
+                <use
+                  href="./img/sprite/symbol-defs.svg#icon-cib_linkedin-in"
+                ></use></svg
+            ></a>
+          </li>
+        </ul>
+
+        <address class="border">
+          <ul class="address-item">
+            <li class="address-list">
+              <a href="tel:+xxxxxxxxxxxx" class="address">+xx-xxxx-xxxx-xx</a>
+            </li>
+            <li class="address-list">
+              <a href="email:goIteens@gmail.com" class="address"
+                >goIteens@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <p>© 2019 GoIteens Template. All Rights Reserved</p>
       </div>
-      <p>© 2019 GoIteens Template. All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -2,11 +2,13 @@
   --primaru-brand-color: #06071b;
   --text-color: #ffffff;
   --liner: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  --liner-btn: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
   --liner-header: linear-gradient(
     90.03deg,
     rgba(0, 197, 235, 0.3) -1.97%,
     rgba(181, 68, 254, 0.3) 89.43%
   );
+  --liner-bagraund: linear-gradient(90.03deg, #00c5eb, #b544fe);
 
   /* -- background-section: #E5E5E5; */
   /* --subtle-text: #8e8f99;
@@ -63,6 +65,7 @@ h2 {
   font-weight: 700;
   line-height: calc(24 / 20);
   letter-spacing: 0em;
+  text-align: center;
 }
 h3 {
   font-size: 14px;
@@ -85,11 +88,13 @@ h5 {
 
 .container {
   max-width: 100%;
-  width: 480px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  /* width: 768px; */
+  /* width: 1280px; */
 }
 /* ____________________________header */
 .header {
@@ -99,6 +104,8 @@ h5 {
 .header-menu {
   background-image: var(--liner-header);
   padding: 22px;
+  display: flex;
+  align-items: center;
 }
 .logo {
   color: var(--text-color);
@@ -107,6 +114,18 @@ h5 {
   line-height: calc(34 / 28);
   letter-spacing: 0em;
   text-align: left;
+}
+.nav {
+  display: flex;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  /* display: flex;
+  align-items: center; */
+  display: none;
 }
 /*___________________________________hero  */
 
@@ -117,12 +136,22 @@ h5 {
   letter-spacing: 0em;
   text-align: left;
   font-family: "Inter";
-  background-color: rgba(0, 197, 235, 1);
+  background-image: var(--liner-btn);
   border-radius: 5px;
-  border: 1px solid rgba(0, 197, 235, 1);
+  border-color: 1px solid var(--liner-btn);
   color: var(--text-color);
-  padding: 15px 65px;
+  padding: 12px 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+.button:hover,
+.button:focus {
+  background: var(--primaru-brand-color);
+  color: var(--text-color);
+  border-color: 1px solid var(--liner-btn);
+}
+
 .list {
   padding-bottom: 40px;
 }
@@ -136,13 +165,6 @@ h5 {
 
 .hero-list:not(:last-child) {
   margin-bottom: 11px;
-}
-.button:hover,
-.button:focus {
-  background-color: rgba(6, 7, 27, 1);
-  color: var(--text-color);
-  border: 1px solid;
-  border-color: #00c5eb;
 }
 
 .menu-link {
@@ -158,8 +180,16 @@ h5 {
 .hero {
   background-color: rgba(6, 7, 27, 1);
   color: var(--text-color);
-  padding-top: 105px;
-  padding-bottom: 69px;
+  padding-top: 100px;
+  padding-bottom: 127px;
+  /* background-image: url(/img/hero/hero-baground.png);
+
+  background-repeat: no-repeat;
+  background-size: auto;
+  box-shadow: 4px 4px 0px 0px #252866; */
+}
+.strelka-icon {
+  fill: var(--text-color);
 }
 
 .title {
@@ -205,15 +235,20 @@ h5 {
   line-height: calc(20 / 14);
   letter-spacing: 0em;
   margin-bottom: 50px;
+  text-align: center;
+}
+.img-key {
+  margin-bottom: 47px;
 }
 .subtext-key-features {
   font-size: 12px;
   font-weight: 500;
   line-height: calc(15 / 12);
   letter-spacing: 0em;
+  display: block;
 }
 .subtext-key-features:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 .title-key-features {
   margin-bottom: 20px;
@@ -234,16 +269,24 @@ h5 {
   line-height: calc(17 / 14);
   letter-spacing: 0em;
   margin-bottom: 50px;
+  text-align: center;
 }
 .video-wrapper {
   max-width: 100%;
 
   background-image: url(/img/video/mobil.png);
 }
+.apple-icon {
+  background-color: #00c5eb;
+}
 /* <!--------------------------  OUR TEAM--> */
 .title-our-team {
   margin-bottom: 32px;
 }
+/* .team-item {
+  margin-left: auto;
+  margin-right: auto;
+} */
 .names-developers {
   font-size: 14px;
   font-weight: 500;
@@ -260,13 +303,25 @@ h5 {
 .team-list:not(:last-child) {
   margin-bottom: 24px;
 }
+.team-list {
+  display: block;
+  /* background-color: var(--liner-bagraund); */
+}
 .title-team {
   margin-bottom: 22px;
+  text-align: center;
+}
+.img-developers {
+  margin-bottom: 24px;
 }
 
 /* <!-- ----------------- WHAT OUR COSTUMER’S SAY --> */
 .title-costumer {
   margin-bottom: 45px;
+  width: 179px;
+}
+.title-name-costumer {
+  text-align: center;
 }
 .img {
   margin-bottom: 23px;
@@ -295,6 +350,7 @@ h5 {
 }
 .subtitle-footer {
   margin-bottom: 20px;
+  text-align: center;
 }
 .text-footer {
   font-size: 16px;
@@ -311,8 +367,38 @@ h5 {
   font-weight: 500;
   line-height: calc(19 / 16);
   letter-spacing: 0em;
-  text-align: center;
   color: var(--text-color);
+  font-style: normal;
+}
+.sotial-icon {
+  fill: var(--text-color);
+}
+.sotial-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: var(--liner-btn);
+  border: 1px solid var(--liner-btn);
+}
+.sotial-list-link:hover,
+.sotial-list-link:focus {
+  background: var(--primaru-brand-color);
+
+  border: 1px solid violet;
+}
+
+.sotial-list-link:hover .sotial-icon,
+.sotial-icon:focus .sotial-icon {
+  fill: var(--primaru-brand-color);
+}
+.icon-sotial-list {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 14px;
 }
 
 .address-list:not(:last-child) {
@@ -320,4 +406,12 @@ h5 {
 }
 .address-item {
   margin-bottom: 40px;
+}
+.footer {
+  padding-top: 40;
+  padding-bottom: 22px;
+}
+.border {
+  border-bottom: 1px solid var(--text-color);
+  margin-bottom: 22px;
 }
