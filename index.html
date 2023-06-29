@@ -23,30 +23,54 @@
       <div class="container header-menu">
         <nav class="nav">
           <a href="./index.html" class="logo">Mobileapp</a>
-          <ul class="menu">
+          <!-- <ul class="menu">
             <li class="menu-item menu-link"><a href="">HOME</a></li>
             <li class="menu-item menu-link"><a href="">FEATURES</a></li>
             <li class="menu-item menu-link"><a href="">TEAM</a></li>
             <li class="menu-item menu-link">
               <a href="">TESTIMONIALS</a>
             </li>
-            <li class="menu-item"><a href="" class="menu-link">CONTACT</a></li>
-          </ul>
+            <li class="menu-item">
+              <a href="" class="menu-link">CONTACT</a>
+            </li>
+          </ul> -->
         </nav>
-        <button type="button" class="modal-btn cursor">burger</button>
+        <button type="button" class="modal-btn js-open-menu" >
+          <svg class="strelka-icon" width="32" height="32">
+            <use href="./img/sprite/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
-    <!-- <a href="./index.html" class="logo">Mobileapp</a><button>close</button>
-    <ul class="menu-modal">
-      <li class="menu-item menu-link"><a href="">HOME</a></li>
-      <li class="menu-item menu-link"><a href="">FEATURES</a></li>
-      <li class="menu-item menu-link"><a href="">TEAM</a></li>
-      <li class="menu-item menu-link">
-        <a href="">TESTIMONIALS</a>
-      </li>
-      <li class="menu-item"><a href="" class="menu-link">CONTACT</a></li>
-    </ul> -->
+    <div class="backdrop-menu js-menu-container" >
+      <div class="modal-menu">
+        <div class="modal-menu-logo">
+          <a href="./index.html" class="logo logo-modal">Mobileapp</a
+          ><button type="button" class="close-mdl-btn js-close-menu">
+            <svg class="strelka-icon" width="32" height="32">
+              <use href="./img/sprite/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="menu-item-modal">
+          <li class="menu-link-modal">
+            <a href="" class="menu-modal">HOME</a>
+          </li>
+          <li class="menu-link-modal">
+            <a href="" class="menu-modal">FEATURES</a>
+          </li>
+          <li class="menu-link-modal">
+            <a href="" class="menu-modal">TEAM</a>
+          </li>
+          <li class="menu-link-modal">
+            <a href="" class="menu-modal">TESTIMONIALS</a>
+          </li>
+          <li class="menu-link-modal">
+            <a href="" class="menu-modal">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- <h2>Download</h2>
     <p>Download free plan</p>
@@ -231,48 +255,56 @@
           </p>
           <ul class="team-item">
             <li class="team-list">
-              <img
-                src="./img/our-team/david-patel.png"
-                alt="David Patel"
-                width="250"
-                height="300"
-                class="img-developers"
-              />
-              <h4 class="title-team">David Patel</h4>
-              <p class="names-developers">Managing Direcor</p>
+              <div class="card">
+                <img
+                  src="./img/our-team/david-patel.png"
+                  alt="David Patel"
+                  width="250"
+                  height="300"
+                  class="img-developers"
+                />
+                <h4 class="title-team">David Patel</h4>
+                <p class="names-developers">Managing Direcor</p>
+              </div>
             </li>
             <li class="team-list">
-              <img
-                src="./img/our-team/rachel-kim.png"
-                alt="Rachel Kim"
-                width="250"
-                height="300"
-                class="img-developers"
-              />
-              <h4 class="title-team">Rachel Kim</h4>
-              <p class="names-developers">Lead Designer</p>
+              <div class="card">
+                <img
+                  src="./img/our-team/rachel-kim.png"
+                  alt="Rachel Kim"
+                  width="250"
+                  height="300"
+                  class="img-developers"
+                />
+                <h4 class="title-team">Rachel Kim</h4>
+                <p class="names-developers">Lead Designer</p>
+              </div>
             </li>
             <li class="team-list">
-              <img
-                src="./img/our-team/samantha-chen.png"
-                alt="Samantha Chen"
-                width="250"
-                height="300"
-                class="img-developers"
-              />
-              <h4 class="title-team">Samantha Chen</h4>
-              <p class="names-developers">Lead Developer</p>
+              <div class="card">
+                <img
+                  src="./img/our-team/samantha-chen.png"
+                  alt="Samantha Chen"
+                  width="250"
+                  height="300"
+                  class="img-developers"
+                />
+                <h4 class="title-team">Samantha Chen</h4>
+                <p class="names-developers">Lead Developer</p>
+              </div>
             </li>
             <li class="team-list">
-              <img
-                src="./img/our-team/andrew-nguyen.png"
-                alt="Andrew Nguyen"
-                width="250"
-                height="300"
-                class="img-developers"
-              />
-              <h4 class="title-team">Andrew Nguyen</h4>
-              <p class="names-developers">Sr. UI Designer</p>
+              <div class="card">
+                <img
+                  src="./img/our-team/andrew-nguyen.png"
+                  alt="Andrew Nguyen"
+                  width="250"
+                  height="300"
+                  class="img-developers"
+                />
+                <h4 class="title-team">Andrew Nguyen</h4>
+                <p class="names-developers">Sr. UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -361,5 +393,7 @@
         <p>© 2019 GoIteens Template. All Rights Reserved</p>
       </div>
     </footer>
+    <script src="./js/modal.js></script>
+   <script src="./js/modal-menu.js></script>
   </body>
 </html>
